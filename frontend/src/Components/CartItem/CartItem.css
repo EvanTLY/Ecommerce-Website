@@ -1,0 +1,178 @@
+.cartItem {
+  margin: 100px 170px;
+}
+
+.cartItem hr {
+  height: 3px;
+  background: #ccc;
+  border: 0;
+}
+
+.format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+  padding: 20px opx;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.format {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.icon {
+  height: 62px;
+}
+
+.remove-icon {
+  width: 15px;
+  margin: 0px 40px;
+  cursor: pointer;
+}
+
+.quantity {
+  width: 65px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.down {
+  display: flex;
+  margin: 100px 0px;
+}
+
+.total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  gap: 40px;
+}
+
+.total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.total button {
+  width: 250px;
+  height: 60px;
+  outline: none;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.promote-code {
+  flex: 1;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.promote-code p {
+  color: black;
+}
+
+.promote-code-box {
+  width: 504px;
+  height: 58px;
+  margin-top: 15px;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+}
+
+.promote-code-box input {
+  width: 330px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+}
+
+.promote-code-box button {
+  width: 170px;
+  height: 58px;
+  font-size: 18px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .cartItem {
+    margin: 60px 50px;
+  }
+
+  .format-main {
+    grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 20px;
+    padding: 15px 0px;
+    font-size: 15px;
+  }
+
+  .icon {
+    height: 50px;
+  }
+
+  .remove-icon {
+    margin: auto;
+  }
+
+  .quantity {
+    width: 40px;
+    height: 30px;
+  }
+
+  .down {
+    margin: 80px 0px;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .total {
+    margin: 0;
+  }
+
+  .total button {
+    max-width: 200px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+  .promote-code-box {
+    width: auto;
+    max-width: 500px;
+  }
+
+  .promote-code-box input {
+    width: 100%;
+  }
+
+  .promote-code-box button {
+    width: 120px;
+    margin-left: -125px;
+  }
+}
+
+@media (max-width: 500px) {
+  .format-main {
+    display: none;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    gap: 10px;
+  }
+
+  .format {
+    display: grid;
+  }
+}
